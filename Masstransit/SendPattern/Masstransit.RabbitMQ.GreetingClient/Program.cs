@@ -50,7 +50,7 @@ namespace Masstransit.RabbitMQ.GreetingClient
 
             await endPoint.Send(command);
 
-            Console.WriteLine("send command2:id={command.Id},{command.DateTime}");
+            Console.WriteLine("send command:id={" + command.Id + "},{" + command.DateTime + "}");
         }
 
     }

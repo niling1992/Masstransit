@@ -11,7 +11,7 @@ namespace Masstransit.RabbitMQ.GreetingServer
         public async Task Consume(ConsumeContext<GreetingCommandA> context)
         {
 
-            await Console.Out.WriteLineAsync("receive greeting commmand: {context.Message.Id},{context.Message.DateTime}");
+            await Console.Out.WriteLineAsync("receive greeting commmand: {"+context.Message.Id+"},{"+context.Message.DateTime+"}");
 
             //var greetingEvent = new GreetingEvent()
             //{
