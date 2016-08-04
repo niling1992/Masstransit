@@ -11,7 +11,7 @@ namespace UserManagement.Service.ContainerInstallers
         {
             container.Register(
                 Component.For<IBus, IBusControl>()
-                    .Instance(UserManagementServiceBusConfiguration.BusInstance)
+                    .Instance(UserManagementServiceBusConfiguration.BusInstance())
                     .LifestyleSingleton());
         }
     }

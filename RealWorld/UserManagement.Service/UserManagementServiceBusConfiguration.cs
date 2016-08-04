@@ -9,10 +9,10 @@ namespace UserManagement.Service
     public class UserManagementServiceBusConfiguration: BusConfiguration
     {
         private UserManagementServiceBusConfiguration() { }
-        public override string RabbitMqAddress { get{return  "rabbitmq://localhost/" ;}set; }
-        public override string QueueName {  get{return  "UserManagementServiceQueue";}set; } 
-        public override string RabbitMqUserName {  get{return "guest";}set; }
-        public override string RabbitMqPassword { get{return "guest";}set; }
+        public override string RabbitMqAddress { get{return  "rabbitmq://localhost/" ;}}
+        public override string QueueName {  get{return  "UserManagementServiceQueue";} }
+        public override string RabbitMqUserName { get { return "guest"; }  }
+        public override string RabbitMqPassword { get { return "guest"; } }
 
         private static IBus _bus;
 
